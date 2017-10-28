@@ -1,2 +1,3 @@
 Exercise3
- - doesn't work on certain instances... Have to see why.
+ - have to see how could I do a formal proof of the validity of my program
+

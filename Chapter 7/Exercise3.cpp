@@ -2,9 +2,14 @@
 #include <cstdlib>
 #include <ctime>
 
-// doesn't work for some instances... Have to see why!
-
 using namespace std;
+
+/*
+	Consider a collection of studentRecord objects. We want to be able to quickly
+	find a particular record based on student number. Store the student records
+	in an array, sort the array by student number, and investigate and implement
+	the interpolation search algorithm.
+*/
 
 #define ARRAY_SIZE 9
 
@@ -36,11 +41,11 @@ int interpolationSearch(studentRecord arr[], int studentNumberToLookFor, int low
         {
             if (arr[pos].stuNum < studentNumberToLookFor)
             {
-                high = pos - 1;
+                low = pos + 1;
             }
             else
             {
-                low = pos + 1;
+                high = pos - 1;
             }
         }
     }
